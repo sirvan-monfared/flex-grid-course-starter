@@ -1,7 +1,20 @@
+@font-face {
+    font-family: YEKAN;
+    font-style: normal;
+    font-weight: 400;
+    src: url(font/yekan.eot);
+    src: url(font/yekan.eot?#iefix) format('embedded-opentype'),
+         url(font/yekan.woff2) format('woff2'),
+         url(font/yekan.woff) format('woff'),
+         url(font/yekan.ttf) format('truetype')
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'YEKAN';
 }
 header {
     align-items: center;
@@ -52,7 +65,14 @@ svg {
     height: 50px;
 }
 .avatar {
-    width: 36px;
+    width: 32px;
+}
+.main-menu ul li a{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.main-menu a:hover, .main-menu a:active {
+    color: #36a8e2;
 }
 .hero-section{
     padding: 80px;
@@ -60,14 +80,15 @@ svg {
 .hero-section img {
     height: 500px;
 }
-.hero-description {
-
-}
-.hero-title {
-
+.hero-title{
+    font-size: 38px;
 }
 .hero-subtitle {
-
+    font-size: 20px;
+}
+.left-nav svg {
+    width: 30px;
+    height: 30px;;
 }
 .hero-btn a, .course-btn{ 
     color: #fff;
@@ -85,21 +106,50 @@ svg {
     transition: all .2s ease-in-out;
     width: 100%;
 }
+.features-section h2, .courses-section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.feature {
+    padding: 40px;
+}
 .feature svg{
     color: #f95d1c;
     stroke: #f95d1c;
     height: 40px;
     width: 40px;
 }
-.feature-title{
-    font-size: 1rem;
+.feature-title {
+    font-size: 20px;
 }
 .feature-text{
     color: #686f7a;
-    font-size: 14px;
+    font-size: 16px;
 }
+
 .course {
     box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    padding: 15px;
+}
+.course .course-img {
+    padding: 0;
+}
+.course img {
+    border-radius: 3px;
+    vertical-align: bottom;
+    width: 100%;
+}
+.course-title {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 7px;
+    text-align: right;
+    font-size: 25px;
+    padding: 20px 0;
 }
 .course-footer{
     min-height: 40px;
@@ -130,11 +180,14 @@ svg {
     gap: 5px;
     justify-content: start;
     padding-right: 3px;
+    margin-bottom: 10px;
 }
 .course-link a{
     color: #4183c4;
     text-decoration: none;
     transition: all 0.5s;
+    padding: 10px 0;
+    margin-top: 8px;
 }
 .course-link svg{
     height: 20px;
